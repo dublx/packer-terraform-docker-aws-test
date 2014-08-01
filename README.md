@@ -1,7 +1,11 @@
-Playground for Packer and Terraform to build a Docker based cloud cluster
-Keeps build history of Packer build's Terraform states over iterations to your cloud configuration.
-Build history is stored in `builds/`. 
+# Description
+Playground for Packer and Terraform to build a Docker based cloud cluster.  
+
+Keeps build history of Packer build's Terraform states over iterations to your cloud configuration. Build history is stored in `builds/`. 
+
 Must have the AWS key/secret pair in ENV vars `AWS_ACCESS_KEY` and `AWS_SECRET_KEY` 
+
+
 # Install
 ```shell
 git clone git@github.com:dublx/packer-terraform-docker-aws-test.git 
