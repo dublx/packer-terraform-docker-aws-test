@@ -1,0 +1,1 @@
+ssh -i auth/aws-luis-instance.pem ubuntu@$1
