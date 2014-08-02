@@ -1,5 +1,5 @@
 ### Description
-Playground for Packer and Terraform to build a Docker based cloud cluster.  
+Hi, this is a playground for Packer and Terraform to build a Docker based cloud cluster.  
 
 Keeps build history of Packer build's Terraform states over iterations to your cloud configuration. Build history is stored in `builds/`. 
 
