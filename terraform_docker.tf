@@ -47,6 +47,25 @@ resource "aws_instance" "docker" {
     subnet_id = "${aws_subnet.docker-subnet.id}"
     security_groups = ["${aws_security_group.ssh_whitelisted.id}"]
     instance_type = "t1.micro"
+
+	# # Copies the file as the root user using a password
+	# provisioner "file" {
+	#     source = "conf/myapp.conf"
+	#     destination = "/etc/myapp.conf"
+	#     connection {
+	#         user = "root"
+	#         password = "${var.root_password}"
+	#     }
+	# }
+    # provisioner "local-exec" {
+    #     command = "cat ${aws_instance.docker.private_ip} >> private_ips.txt"
+    # }
+    # provisioner "remote-exec" {
+    #     inline = [
+    #     "docker version",
+    #     "echo ${aws_instance.docker.private_ip}",
+    #     ]
+    # }
 }
 
 resource "aws_eip" "ip" {
